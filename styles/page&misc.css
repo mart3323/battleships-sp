@@ -1,0 +1,86 @@
+body {
+    color: white
+}
+h1, h2, h3 {
+    color: cyan;
+}
+h1 a {
+    color: inherit;
+}
+body {
+    background-color: #222222;
+}
+#pageContainer {
+    max-width: 800px;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+}
+#menubar {
+    display: flex;
+    margin: 24px;
+}
+#menubar .button {
+    flex-grow: 1;
+}
+.button {
+    padding: 12px;
+    display: inline-block;
+    margin: 12px;
+    border: 1px solid #526166;
+    border-radius: 8px;
+    background: linear-gradient(20deg, #53a6a6, #49b3b3);
+}
+.button:hover{
+    background: linear-gradient(20deg, #6da6a6, #80ffff);
+}
+
+.button[disabled]{
+    background: linear-gradient(20deg, #4b4d4d, #798080);
+    color: lightgray;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flex.vertical {
+    flex-direction: column;
+}
+.flex *{
+    flex-grow: 0;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+#scoreboard {
+    display: flex;
+    justify-content: center;
+}
+#scoreboard td, #scoreboard th {
+    padding: 4px;
+}
+@media (max-width: 400px){
+    #scoreboard {
+        font-size: 3vw;
+    }
+}
+#gameoptions > div.flex{
+    margin: 24px;
+    display: flex;
+}
+#gameoptions > div > *{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+input {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    width: 96px;
+    height:42px;
+    font-size: 38px;
+}
